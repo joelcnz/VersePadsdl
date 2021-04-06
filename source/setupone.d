@@ -67,7 +67,8 @@ public:
 
     //    g_window.setFramerateLimit(60);
 
-        g_letterBase = new LetterManager(["lemgreen.png","lemblue.png"], 9, 16, SDL_Rect(0,0, 1280,800));
+        // g_letterBase = new LetterManager(["lemgreen.png","lemblue.png"], 9, 16, SDL_Rect(0,0, 1280,800));
+        g_letterBase = new LetterManager(["promptPrint.png"], 14, 24, SDL_Rect(0,0, 1280,800), 14,0);
         assert(g_letterBase, "Error creating LetterManager");
 
         updateFileNLetterBase(WELCOME, newline);
